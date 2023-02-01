@@ -14,17 +14,20 @@ tt_data <- tt_load(2023, week=5)
 
 # Dataset 1
 tib1 <- tt_data[[1]]
-tib2 <- tt_data[[2]]
-rm(tt_data)
 
-# Let's check it
+# Dataset 2
+tib2 <- tt_data[[2]]
+
+# Let's check dataset 1
 glimpse(tib1)
 summary(tib1)
 
+# Let's check dataset 1
 glimpse(tib2)
 summary(tib2)
 
-# Age histogram
+# Age density plot --------------------------
+
 ggplot(tib2, aes(x = age_years)) +
   geom_density(col = "black") +
   scale_y_continuous(expand = c(0,0)) +
@@ -38,8 +41,6 @@ tib2 |>
   mutate(animal_sex = as.factor(animal_sex)) |> 
   group_by(animal_sex) |> 
   summarise(mean(hrs_indoors))
-
-
 
 # Adding an image
 cat1 <- magick::image_read("https://images.phylopic.org/images/23cd6aa4-9587-4a2e-8e26-de42885004c9/raster/1024x833.png")
