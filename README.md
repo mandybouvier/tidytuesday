@@ -2,7 +2,7 @@
 Codes for Tidy tuesday
 
 TidyTuesday is a weekly data project to learn R.
-If have never heard about this, you can read more in here <https://github.com/rfordatascience/tidytuesday>
+If have never heard about this, you can read more in here <link> https://github.com/rfordatascience/tidytuesday </link>
 
 I decided to join TidyTuesday to improve my skills and as a way to destress (:
 
